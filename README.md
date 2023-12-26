@@ -16,7 +16,7 @@ To run this project, you will need:
 1. Clone the project repository:
 
 ```bash
-git clone https://github.com/Mashaun18/BookShop.git
+git clone https://github.com/Mashaun18/Bookshop.git
 ```
 
 2. Create a virtual environment and activate it:
