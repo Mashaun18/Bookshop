@@ -18,11 +18,11 @@ class BooksByGenre(generics.ListAPIView):
 
     def get_queryset(self):
         genre = self.kwargs['genre']
-        return Book.objects.filter(genre=genre)
+        return Book.objects.filter(genre__name=genre)
 
 class BooksByAuthor(generics.ListAPIView):
     serializer_class = BookSerializer
 
     def get_queryset(self):
         author = self.kwargs['author']
-        return Book.objects.filter(author=author)
+        return Book.objects.filter(author__name=author)
